@@ -2,7 +2,7 @@ import React, { useCallback, useState } from "react";
 import CustomButton from "./CustomButton";
 import { menu, search } from "../assets";
 import { usePrivy } from "@privy-io/react-auth";
-import { IconHeartHandshake } from "@tabler/icons-react";
+import { IconHeartHandshake } from "@tabler/icons-react" ;
 
 const Navbar = () => {
 
