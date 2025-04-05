@@ -1,9 +1,22 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
-import Sidebar from "./components/Sidebar";
-import Navbar from "./components/Navbar" ;
+import { Route, Routes,useNavigate } from "react-router-dom";
+import {Sidebar,Navbar }from "./components";
+import { Home, Profile, Onboarding } from "./pages";
+
 
 const App = () => {
+     
+  const { user, authenticated, ready, login, currentUser } = useStateContext();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (ready && !authenticated) {
+      login();
+    } else if (user && !currentUser) {
+      navigate("/onboarding");
+    }
+  }, [user, authenticated, ready, login, currentUser, navigate]);
+
   return (
     <div className="relative flex min-h-screen flex-row bg-[#13131a] p-4">
       <div className="relative mr-10 hidden sm:flex">
