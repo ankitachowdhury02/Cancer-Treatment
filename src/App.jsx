@@ -1,7 +1,8 @@
 import React from "react";
 import { Route, Routes,useNavigate } from "react-router-dom";
 import {Sidebar,Navbar }from "./components";
-import { Home, Profile, Onboarding } from "./pages";
+//import { Home, Profile, Onboarding } from "./pages";
+import { useStateContext } from "./context"; // or the correct path
 
 
 const App = () => {
