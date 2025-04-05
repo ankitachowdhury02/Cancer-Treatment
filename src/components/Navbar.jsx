@@ -3,7 +3,7 @@ import CustomButton from "./CustomButton";
 import { menu, search } from "../assets";
 import { usePrivy } from "@privy-io/react-auth";
 import { IconHeartHandshake } from "@tabler/icons-react";
-import { NavLink } from "../constants";
+import { NavLinks } from "../constants";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -71,7 +71,7 @@ const Navbar = () => {
           ${!toggleDrawer ? "-translate-y-[100vh]" : "translate-y-0"} transition-all duration-700`}
         >
           <ul className="mb-4">
-            {NavLink.map((link) => (
+            {NavLinks.map((link) => (
               <li
                 key={link.name}
                 className={`flex p-4 ${isActive === link.name ? "bg-[#3a3a43]" : ""}`}

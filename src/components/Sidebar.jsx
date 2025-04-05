@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import { sun } from "../assets";
-import { navlinks } from "../constants";
+import { NavLinks } from "../constants";
 import { IconHeartHandshake } from "@tabler/icons-react";
 
 const Icon = ({ styles, name, imgUrl, isActive, disabled, handleClick }) => (
@@ -40,7 +40,7 @@ const Sidebar = () => {
 
       <div className="mt-12 flex w-[76px] flex-1 flex-col items-center justify-between rounded-[20px] bg-[#1c1c24] py-4">
         <div className="flex flex-col items-center justify-center gap-3">
-          {navlinks.map((link) => (
+          {NavLinks.map((link) => (
             <Icon
               key={link.name}
               {...link}

@@ -8,15 +8,16 @@ import App from './App' ;
 
 import './index.css';
 
-import { PrivyProvider } from '@privy-io/react-auth';
+import {PrivyProvider} from '@privy-io/react-auth';
+
 
 const root = ReactDom.createRoot(document.getElementById("root")) ;
 
 root.render(
 
     <PrivyProvider
-    appId="your-privy-app-id"
-    clientId="cm8m00l9j00chee25x6xeqoxq"
+    appId="cm8m00l9j00chee25x6xeqoxq"
+    
     config={{
       // Display email and wallet as login methods
       appearance: {

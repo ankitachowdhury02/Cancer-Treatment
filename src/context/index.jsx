@@ -1,6 +1,6 @@
 import { records, screening, user, apps } from "../assets";
 
-export const navLinks = [
+export const NavLinks = [
   {
     name: "dashboard",
     imageUrl: apps,
