@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
-import { DisplayInfo } from "../components";
+// import { DisplayInfo } from "../components";
 
-const Home = () => {
-  return <DisplayInfo />;
-};
+// const Home = () => {
+//   return <DisplayInfo />;
+// };
 
-export default Home;
+// export default Home;
 
 
