@@ -6,7 +6,7 @@ import {Sidebar,Navbar }from "./components";
 
 
 const App = () => {
-     
+  
   // const { user, authenticated, ready, login, currentUser } = useStateContext();
   // const navigate = useNavigate();
 
