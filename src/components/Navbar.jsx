@@ -81,10 +81,19 @@ const Navbar = () => {
                   navigate(link.link);
                 }}
               >
-                {link.name}
+              
+              <p
+                  className={`ml-[20px] font-epilogue text-[14px] font-semibold ${
+                    isActive === link.name ? "text-[#1dc071]" : "text-[#808191]"
+                  }`}
+                >
+                  {link.name}
+                </p>
+
               </li>
             ))}
           </ul>
+          <div className="mx-4 flex"></div>
         </div>
       </div>
     </div>
